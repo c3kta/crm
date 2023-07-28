@@ -4,7 +4,6 @@ import Footer from "./components/Footer";
 import {BrowserRouter, Route} from "react-router-dom";
 import Team from "./components/Content/Team/Team";
 // import Routes from "./routes";
-// import Content from "./components/Content";
 
 function App() {
   return (
@@ -14,14 +13,8 @@ function App() {
                   <Header />
               </div>
 
-              <div className="content 300 font-bold mt-[50px]">
-                  {/*<Routes>*/}
-                  {/*    <Route path='/' element={<Content />} />*/}
-                  {/*</Routes>*/}
-
+              <div className="content 300 font-bold mt-[100px]">
                   <Team />
-
-
                   {/*<Routes />*/}
               </div>
 

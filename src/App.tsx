@@ -1,21 +1,31 @@
 import React from 'react';
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import {BrowserRouter, Route} from "react-router-dom";
+// import Routes from "./routes";
+// import Content from "./components/Content";
 
 function App() {
   return (
       <div className="App">
-          <div className="header fixed w-full left-0 top-0">
-              <Header />
-          </div>
+          <BrowserRouter>
+              <div className="header fixed w-full left-0 top-0">
+                  <Header />
+              </div>
 
-          <div className="content 300 font-bold mt-[50px]">
-            ss
-          </div>
+              <div className="content 300 font-bold mt-[50px]">
+                  {/*<Routes>*/}
+                  {/*    <Route path='/' element={<Content />} />*/}
+                  {/*</Routes>*/}
 
-          <div className="footer absolute w-full left-0 bottom-0">
-              <Footer />
-          </div>
+
+                  {/*<Routes />*/}
+              </div>
+
+              <div className="footer absolute w-full left-0 bottom-0">
+                  <Footer />
+              </div>
+          </BrowserRouter>
       </div>
   );
 }

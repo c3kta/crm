@@ -1,10 +1,10 @@
 import React, {useEffect} from "react";
 import {useTypedSelector} from "../../../hooks/useTypedSelector";
-import {useActions} from "../../../hooks/useActions";
+import {useUserActions} from "../../../hooks/useActions";
 
 const Team: React.FC = () => {
     const {users, loading, error} = useTypedSelector(state => state.user);
-    const {fetchUsers} = useActions();
+    const {fetchUsers} = useUserActions();
 
     useEffect(() => {
         fetchUsers();

@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import {BrowserRouter, Route} from "react-router-dom";
-import Team from "./components/Content/Team/Team";
+import Index from "./components/Content/Team";
 // import Routes from "./routes";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
               </div>
 
               <div className="content 300 font-bold mt-[100px]">
-                  <Team />
+                  <Index />
                   {/*<Routes />*/}
               </div>
 

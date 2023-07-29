@@ -9,7 +9,7 @@ import Schedule from "./components/Content/Schedule";
 import Privacy from "./components/Content/Privacy";
 import About from "./components/Content/About";
 import Contacts from "./components/Content/Contacts";
-import New from "./components/Content/Order/New";
+import New from "./components/Content/Orders/Order/New";
 
 class AppRoutes extends Component {
     render() {

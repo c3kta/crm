@@ -10,10 +10,6 @@ const Orders: React.FC = () => {
         fetchOrders()
     }, []);
 
-    if (loading) {
-        return <h1>Идёт загрузка заказов..</h1>
-    }
-
 
     if (error) {
         return <h1>{error}</h1>

@@ -5,7 +5,7 @@ const initialState: OrderState = {
     loading: false,
     error: null
 }
-export const orderReducer = (state = initialState, action: OrderAction) => {
+export const orderReducer = (state = initialState, action: OrderAction): OrderState => {
     switch (action.type) {
         case OrderActionTypes.FETCH_ORDERS:
             return { loading: true, error: null, orders: []}

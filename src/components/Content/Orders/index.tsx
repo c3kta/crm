@@ -14,14 +14,19 @@ const Orders: React.FC = () => {
         return <h1>Идёт загрузка заказов..</h1>
     }
 
+
     if (error) {
         return <h1>{error}</h1>
     }
 
     return (
         <>
-            {orders.map((order, key) => {
-                return <div className="mt-2 mb-2" key={key}>{order.title}</div>
+            {orders.map(order => {
+                return (
+                    <>
+                        <div className="mt-2 mb-2" key={order.id}>{order.title}</div>
+                    </>
+                );
             })}
         </>
     );
